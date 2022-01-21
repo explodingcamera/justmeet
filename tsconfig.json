@@ -1,0 +1,3 @@
+{
+    "extends": "@snowstorm/core/tsconfig.base.json"
+}

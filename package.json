@@ -1,0 +1,21 @@
+{
+  "name": "justmeet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "snowstorm dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@explodingcamera/eslint-config": "^21.0.0-1",
+    "@snowstorm/cli": "0.7.2--canary.25.ea87c95.0",
+    "@snowstorm/core": "0.7.2--canary.25.ea87c95.0",
+    "eslint": "^8.7.0",
+    "react": "18.0.0-rc.0",
+    "react-dom": "18.0.0-rc.0",
+    "typescript": "^4.5.5"
+  }
+}
