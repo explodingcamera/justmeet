@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "snowstorm dev",
+    "gen-types": "npx openapi-typescript https://vazbvduuzjuqfcesotjp.supabase.co/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNTEwNTY1MCwiZXhwIjoxOTUwNjgxNjUwfQ.ehIj8ZbzaoooJ9kCjXlMvlJLCSPQldklwhTKclL43Jo --output types/supabase.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,12 +14,17 @@
     "@explodingcamera/eslint-config": "^21.0.0-1",
     "@snowstorm/cli": "0.7.3--canary.27.9e2308e.0",
     "@snowstorm/core": "0.7.3--canary.27.9e2308e.0",
+    "@supabase/supabase-js": "^1.29.3",
     "eslint": "^8.7.0",
+    "openapi-typescript": "^5.1.0",
     "react": "18.0.0-rc.0",
     "react-dom": "18.0.0-rc.0",
-    "react-text-loop": "^2.3.0",
+    "react-text-transition": "^1.3.0",
     "sass": "^1.49.0",
     "typescript": "^4.5.5",
     "vite-plugin-fonts": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38"
   }
 }
