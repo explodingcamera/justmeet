@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import TextTransition, { presets } from 'react-text-transition';
+import { useLogin, useSupabase } from '../hooks/supabase';
+import { Link } from '@snowstorm/core';
 
 const t = [
 	'bouldering',
@@ -13,6 +15,7 @@ const t = [
 ];
 
 export const Index = () => {
+	const login = useLogin();
 	const [index, setIndex] = useState<number>(0);
 
 	useEffect(() => {
@@ -33,9 +36,12 @@ export const Index = () => {
 					/>
 				</h2>
 				<div className={styles.actions}>
-					<button type="button">Sign me up!</button>
-					<button type="button">Sign in</button>
-					<button type="button">FAQ</button>
+					<button type="button" onClick={() => login.mutate()}>
+						Authenticate with Discord
+					</button>
+					<Link to="/faq">
+						<button type="button">FAQ</button>
+					</Link>
 				</div>
 			</div>
 		</div>

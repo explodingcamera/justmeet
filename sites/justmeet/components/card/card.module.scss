@@ -1,0 +1,23 @@
+.card {
+  box-shadow: 2px 4px 9px #1694cb4a, 0 0 2rem 4px #00000012;
+  color: #fff;
+  background: linear-gradient(166deg, #1d99c4, #22a488);
+  margin: 1rem 0;
+  display: flex;
+  padding: 1rem;
+  border-radius: 20px;
+  background-size: cover;
+  min-height: 10rem;
+  width: fit-content;
+  min-width: 14rem;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  cursor: pointer;
+
+  > h1 {
+    text-shadow: -3px 2px 20px #000000cc;
+    line-height: 1;
+  }
+}

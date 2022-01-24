@@ -1,0 +1,11 @@
+.dashboard {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  flex-direction: column;
+  padding: 2rem;
+
+  > h1 {
+    font-size: 1.5rem;
+  }
+}
