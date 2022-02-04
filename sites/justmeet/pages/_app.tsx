@@ -1,11 +1,11 @@
-import { SnowstormCustomAppProps } from '@snowstorm/core/types';
+import { FC } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Layout } from '../components/layout';
 import { SupabaseContext } from '../hooks/supabase';
 
 const queryClient = new QueryClient();
 
-const App = ({ children }: SnowstormCustomAppProps) => (
+const App: FC = ({ children }) => (
 	<Layout>
 		<QueryClientProvider client={queryClient}>
 			<SupabaseContext>{children}</SupabaseContext>

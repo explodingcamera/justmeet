@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import TextTransition, { presets } from 'react-text-transition';
-import { useLogin, useSupabase } from '../hooks/supabase';
+import { login, useSupabase } from '../hooks/supabase';
 import { Link } from '@snowstorm/core';
 
 const t = [
@@ -15,7 +15,8 @@ const t = [
 ];
 
 export const Index = () => {
-	const login = useLogin();
+	const supabase = useSupabase();
+	const onLogin = async () => login(supabase);
 	const [index, setIndex] = useState<number>(0);
 
 	useEffect(() => {
@@ -36,7 +37,7 @@ export const Index = () => {
 					/>
 				</h2>
 				<div className={styles.actions}>
-					<button type="button" onClick={() => login.mutate()}>
+					<button type="button" onClick={onLogin}>
 						Authenticate with Discord
 					</button>
 					<Link to="/faq">
