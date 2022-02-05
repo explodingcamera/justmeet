@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "snowstorm dev",
+    "export": "snowstorm export",
     "gen-types": "npx openapi-typescript https://vazbvduuzjuqfcesotjp.supabase.co/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNTEwNTY1MCwiZXhwIjoxOTUwNjgxNjUwfQ.ehIj8ZbzaoooJ9kCjXlMvlJLCSPQldklwhTKclL43Jo --output types/supabase.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,8 +13,8 @@
   "license": "MIT",
   "dependencies": {
     "@explodingcamera/eslint-config": "^21.0.0",
-    "@snowstorm/cli": "0.14.2",
-    "@snowstorm/core": "0.14.2",
+    "@snowstorm/cli": "0.15.1",
+    "@snowstorm/core": "0.15.1",
     "@supabase/supabase-js": "^1.30.0",
     "eslint": "^8.8.0",
     "openapi-typescript": "^5.1.1",
