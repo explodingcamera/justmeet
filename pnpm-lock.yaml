@@ -2,8 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@explodingcamera/eslint-config': ^21.0.0
-  '@snowstorm/cli': 0.15.2
-  '@snowstorm/core': 0.15.2
+  '@snowstorm/cli': 0.15.3--canary.41.1c46cee.0
+  '@snowstorm/core': 0.15.3--canary.41.1c46cee.0
   '@supabase/supabase-js': ^1.30.0
   '@types/react': ^17.0.39
   eslint: ^8.8.0
@@ -18,8 +18,8 @@ specifiers:
 
 dependencies:
   '@explodingcamera/eslint-config': 21.0.0_eslint@8.8.0+typescript@4.5.5
-  '@snowstorm/cli': 0.15.2_5c6c267a443f74a6c367752e974f4361
-  '@snowstorm/core': 0.15.2_5c6c267a443f74a6c367752e974f4361
+  '@snowstorm/cli': 0.15.3--canary.41.1c46cee.0_5c6c267a443f74a6c367752e974f4361
+  '@snowstorm/core': 0.15.3--canary.41.1c46cee.0_5c6c267a443f74a6c367752e974f4361
   '@supabase/supabase-js': 1.30.0
   eslint: 8.8.0
   openapi-typescript: 5.1.1
@@ -436,11 +436,11 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@snowstorm/cli/0.15.2_5c6c267a443f74a6c367752e974f4361:
-    resolution: {integrity: sha512-L8UUM7FIm/uN2VKVP/KGvW2AT58NEkeT+TUzsZp3WbnFlz7i+5mB764ScVcA0XxIWjyaioJSHl4lsgmYhf6MxQ==}
+  /@snowstorm/cli/0.15.3--canary.41.1c46cee.0_5c6c267a443f74a6c367752e974f4361:
+    resolution: {integrity: sha512-NZ6mIg0aDKT/D/L3/pW7na2Do+1Y7OsFp0YPopDRWwhY+wUGOwj+G4LQyhRg9AMJzU7tAAr9mu7rt2AZH3L4XA==}
     hasBin: true
     dependencies:
-      '@snowstorm/core': 0.15.2_5c6c267a443f74a6c367752e974f4361
+      '@snowstorm/core': 0.15.3--canary.41.1c46cee.0_5c6c267a443f74a6c367752e974f4361
       meow: 10.1.2
       yargs: 17.3.1
     transitivePeerDependencies:
@@ -452,8 +452,8 @@ packages:
       - supports-color
     dev: false
 
-  /@snowstorm/core/0.15.2_5c6c267a443f74a6c367752e974f4361:
-    resolution: {integrity: sha512-NPYkOt/05K+8OdzkpiGqnh7f07jUuYcb0yOK/ugbxMaXNlQBUE15ZF2Wb8pCr1uU9B2zybkWdiMm6uuI0tvYtw==}
+  /@snowstorm/core/0.15.3--canary.41.1c46cee.0_5c6c267a443f74a6c367752e974f4361:
+    resolution: {integrity: sha512-mE4IrcEPwAyA+zXPPWzdRNNTlLVPsPBZlRtZ5561eTHNeO1fo9Al5+uQOXCztcuNSoz5jAM7z/RRupLH012vDQ==}
     peerDependencies:
       react: 18.0.0-rc.0
       react-dom: 18.0.0-rc.0
@@ -464,8 +464,8 @@ packages:
     dependencies:
       '@explodingcamera/youch': 3.1.0-fix
       '@rollup/pluginutils': 4.1.2
-      '@snowstorm/head': 0.15.2_757a802188413a36d4f24237d13b8e90
-      '@snowstorm/router': 0.15.2_react@18.0.0-rc.0
+      '@snowstorm/head': 0.15.3--canary.41.1c46cee.0_757a802188413a36d4f24237d13b8e90
+      '@snowstorm/router': 0.15.3--canary.41.1c46cee.0_react@18.0.0-rc.0
       '@types/write-file-atomic': 3.0.3
       '@vitejs/plugin-react': 1.1.4
       react: 18.0.0-rc.0
@@ -483,8 +483,8 @@ packages:
       - supports-color
     dev: false
 
-  /@snowstorm/head/0.15.2_757a802188413a36d4f24237d13b8e90:
-    resolution: {integrity: sha512-iCtjDInwPFRQGE5yWSCH7CEs6cfUOPH6mEkMf2w10S4qg4mssYNA/VL7DqsrU50VEnhz3D+UBzFKYodLDwJcsg==}
+  /@snowstorm/head/0.15.3--canary.41.1c46cee.0_757a802188413a36d4f24237d13b8e90:
+    resolution: {integrity: sha512-miFP7FWqFF2Ainxg+3Am5s1m690v4wHuyg2JUIKLSqrNzsnh3f6eODSMFQEzHw1RDf4gtC65MFCY2VupLOQF/A==}
     peerDependencies:
       react: 18.0.0-rc.0
       react-dom: 18.0.0-rc.0
@@ -493,8 +493,8 @@ packages:
       react-dom: 18.0.0-rc.0_react@18.0.0-rc.0
     dev: false
 
-  /@snowstorm/router/0.15.2_react@18.0.0-rc.0:
-    resolution: {integrity: sha512-GYaCUZen4RujbQdNs8ie5C3Rq6GRjQPvx4lqa5/gQksS0gu64I+FivrgLTCR0T1YspvOvsaJtO9gSg75v1gQYA==}
+  /@snowstorm/router/0.15.3--canary.41.1c46cee.0_react@18.0.0-rc.0:
+    resolution: {integrity: sha512-Az4eqi4uND5SjIRf3IxgweobFBdPgz3aAyGmNFT+wF65dRlEcm5HV/2Cck/q/OtXAbEWI9OkwKAH+Es7JC0W+g==}
     peerDependencies:
       react: '>=18.0.0'
     dependencies:
