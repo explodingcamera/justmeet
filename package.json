@@ -14,8 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "@explodingcamera/eslint-config": "^21.0.0",
-    "@snowstorm/cli": "0.15.2",
-    "@snowstorm/core": "0.15.2",
+    "@snowstorm/cli": "0.15.3--canary.41.1c46cee.0",
+    "@snowstorm/core": "0.15.3--canary.41.1c46cee.0",
     "@supabase/supabase-js": "^1.30.0",
     "eslint": "^8.8.0",
     "openapi-typescript": "^5.1.1",
