@@ -1,11 +1,11 @@
-import { SnowstormConfig } from '@snowstorm/core/server';
-import { Plugin as PluginFonts } from 'vite-plugin-fonts';
+// import { SnowstormConfig } from '@snowstorm/core/server';
+import { VitePluginFonts } from 'vite-plugin-fonts';
 
-export const Config: SnowstormConfig = {
+export const Config = {
 	site: {
 		build: {
 			plugins: [
-				PluginFonts({
+				VitePluginFonts({
 					google: {
 						families: ['Inter'],
 					},

@@ -1,3 +1,6 @@
 {
-    "extends": "@snowstorm/core/tsconfig.base.json"
+  "extends": "@snowstorm/core/tsconfig.base.json",
+  "ts-node": {
+    "experimentalResolverFeatures": true
+  }
 }
