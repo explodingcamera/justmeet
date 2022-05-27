@@ -1,10 +1,7 @@
 import { FC } from 'react';
 import { Layout } from '../components/layout';
-import { SupabaseContext } from '../hooks/supabase';
 
-const App: FC = ({ children }) => (
-	<Layout>
-		<SupabaseContext>{children}</SupabaseContext>
-	</Layout>
+const App: FC<{ children: React.ReactElement }> = ({ children }) => (
+	<Layout>{children}</Layout>
 );
 export default App;

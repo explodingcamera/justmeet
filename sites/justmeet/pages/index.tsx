@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import TextTransition, { presets } from 'react-text-transition';
-import { login, useSupabase } from '../hooks/supabase';
 import { Link } from '@snowstorm/core';
+import { useAPI } from '../hooks/context';
 
 const t = [
 	'bouldering',
@@ -15,8 +15,8 @@ const t = [
 ];
 
 export const Index = () => {
-	const supabase = useSupabase();
-	const onLogin = async () => login(supabase);
+	const _api = useAPI();
+	const onLogin = async () => undefined;
 	const [index, setIndex] = useState<number>(0);
 
 	useEffect(() => {
@@ -38,7 +38,10 @@ export const Index = () => {
 				</h2>
 				<div className={styles.actions}>
 					<button type="button" onClick={onLogin}>
-						Authenticate with Discord
+						Login
+					</button>
+					<button type="button" onClick={onLogin}>
+						Sign up
 					</button>
 					<Link to="/faq">
 						<button type="button">FAQ</button>

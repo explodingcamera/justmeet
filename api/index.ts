@@ -1,27 +1,22 @@
 import { createHTTPServer } from '@trpc/server/adapters/standalone';
 import { applyWSSHandler } from '@trpc/server/adapters/ws';
-import { WebSocketServer } from 'ws';
-import { appRouter } from './router';
 
-export type Context = Record<string, unknown>;
-export type AppRouter = typeof appRouter;
+import { WebSocketServer } from 'ws';
+import router from './router';
+import { createContext } from './context';
 
 // http server
 const { server, listen } = createHTTPServer({
-	router: appRouter,
-	createContext() {
-		return {};
-	},
+	router,
+	createContext,
 });
 
 // ws server
 const wss = new WebSocketServer({ server });
-applyWSSHandler<AppRouter>({
+applyWSSHandler<typeof router>({
 	wss,
-	router: appRouter,
-	createContext() {
-		return {};
-	},
+	router,
+	createContext,
 });
 
 listen(2022);

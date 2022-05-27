@@ -3,7 +3,9 @@ import styles from './index.module.scss';
 import '@snowstorm/core/base.css';
 import './global.css';
 
-export const Layout: React.FC = ({ children }) => (
+export const Layout: React.FC<{ children: React.ReactElement }> = ({
+	children,
+}) => (
 	<div className={styles.layout}>
 		<div className={styles.header} />
 		<div className={styles.content}>{children}</div>
